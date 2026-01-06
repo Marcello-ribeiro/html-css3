@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias</title>
+    <style>
+        body{
+            background-color: rgb(227, 205, 233);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        imagem dinamica
+    </h1>
+    <p>
+        tente abrir esse site em vario dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador 
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/fotop.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/fotom.png" type="image/png">
+          <img src="imagens/_RAW8039.jpg" alt="imagen flexivel">  
+        </picture>
+    </p>
+    <h1>
+        testando audios
+    </h1>
+    <p>
+        aprender a por audio
+    </p>
+   <audio preload="metadata" controls loop>
+   <source src="midia/victor.mp3" type="audio/mpeg">
+   </audio>
+   <h1>
+    videos hospedados localmente 
+   </h1>
+   <p>
+    hospedados no meu servidor 
+   </p>
+   <video src="vidio/14927631_1280_720_30fps.mp4" width="550" controls ></video>
+</body>
+</html>

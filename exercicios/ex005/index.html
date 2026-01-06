@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Azul Animado</title>
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* FUNDO EM DEGRADÊ AZUL */
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        /* CONTAINER CENTRAL */
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            width: 350px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            animation: flutuar 3s ease-in-out infinite;
+        }
+
+        /* ANIMAÇÃO DE FLUTUAÇÃO */
+        @keyframes flutuar {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        h1 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        /* BOTÕES */
+        .botoes {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        button {
+            padding: 15px;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            background: linear-gradient(135deg, #1cb5e0, #000851);
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        /* EFEITO AO PASSAR O MOUSE */
+        button:hover {
+            transform: scale(1.1) rotate(1deg);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+            background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Projeto Azul</h1>
+        <p>Botões flutuantes com animações em CSS</p>
+
+        <div class="botoes">
+            <button>Botão 1</button>
+            <button>Botão 2</button>
+            <button>Botão 3</button>
+        </div>
+    </div>
+
+</body>
+</html>
